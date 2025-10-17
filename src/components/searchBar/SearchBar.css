@@ -1,0 +1,33 @@
+.searchbar { position: relative; width: 100%; }
+.searchbar-input-wrapper { display: flex; justify-content: center; position: relative; width: 100%; }
+.searchbar-input-inner { position: relative; width: 100%; max-width: 24rem; }
+.searchbar-input {
+  background-color: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 16px 8px 36px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+}
+.searchbar-input::placeholder { color: #000000; opacity: 1; }
+.searchbar-input:focus { border-color: #3b82f6; box-shadow: 0 0 0 1px #3b82f6; }
+.searchbar-icon {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  width: 16px; height: 16px; color: #000000;
+}
+.searchbar-dropdown-wrapper { display: flex; justify-content: center; width: 100%; }
+.searchbar-dropdown {
+  position: absolute; background: #e5e7eb; width: 100%; max-width: 24rem; z-index: 50; margin-top: 4px;
+  border-radius: 8px; padding: 8px;
+}
+.searchbar-option { padding: 8px; border-radius: 8px; cursor: pointer; }
+.searchbar-option:hover { background: #d1d5db; }
+.searchbar-option-inner { display: flex; align-items: center; gap: 12px; }
+.searchbar-option-image { width: 48px; height: 48px; object-fit: contain; border-radius: 4px; }
+.searchbar-option-title { margin: 0; font-weight: 500; color: #111827; }
+.searchbar-option-price { margin: 0; font-size: 0.875rem; color: #4b5563; }
+.searchbar-empty { display: flex; justify-content: center; }
+.searchbar-empty-image { width: 80px; }
+

@@ -1,0 +1,109 @@
+/* Footer Styles */
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.footer-text {
+  display: inline-block;
+  /* Make copyright text white */
+  color: white;
+  font-size: 0.875rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(229, 231, 235, 0.3);
+  white-space: nowrap;
+}
+
+.footer-text a {
+  color: white;
+  text-decoration: none;
+}
+
+/* More specific rule to override utility classes like Tailwind's `text-gray-100` if applied */
+.footer-text a.text-gray-100 {
+  color: white;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-icon {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icon:hover {
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-text {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .footer-logo {
+    font-size: 1.125rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .footer-container {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .footer-container {
+    padding: 1.25rem 2rem;
+  }
+}

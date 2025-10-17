@@ -1,0 +1,353 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shared button styles */
+.btn-primary {
+  background-color: #1d4ed8; /* blue-600 */
+  color: #ffffff;
+  border: 1px solid #1d4ed8;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-primary:hover { background-color: #1e40af; border-color: #1e40af; }
+
+.btn-block { width: 100%; }
+
+.btn-danger {
+  background-color: #dc2626; /* red-600 */
+  color: #ffffff;
+  border: 1px solid #dc2626;
+  border-radius: 12px; /* matches rounded look in example */
+  padding: 12px 16px;
+  font-weight: 700; /* bold label */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-danger:hover { background-color: #b91c1c; border-color: #b91c1c; }
+
+/* Match Add To Cart button color for site sections (e.g., footer) */
+.theme-primary-bg {
+  background-color: #1d4ed8; /* same as .btn-primary */
+  color: #ffffff;
+}
+
+/* Primary text color to match Add To Cart button */
+.theme-primary-text {
+  color: #1d4ed8;
+}
+
+/* ========================================
+   GLOBAL RESPONSIVE STYLES
+   ======================================== */
+
+/* Base responsive container */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* Responsive Grid Systems */
+.grid-responsive {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .grid-cols-sm-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-cols-md-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-md-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-cols-lg-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-lg-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Responsive Typography */
+.text-responsive-sm {
+  font-size: 0.875rem; /* 14px */
+}
+
+@media (min-width: 768px) {
+  .text-responsive-sm {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+.text-responsive-base {
+  font-size: 1rem; /* 16px */
+}
+
+@media (min-width: 768px) {
+  .text-responsive-base {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+.text-responsive-lg {
+  font-size: 1.25rem; /* 20px */
+}
+
+@media (min-width: 768px) {
+  .text-responsive-lg {
+    font-size: 1.5rem; /* 24px */
+  }
+}
+
+.text-responsive-xl {
+  font-size: 1.5rem; /* 24px */
+}
+
+@media (min-width: 768px) {
+  .text-responsive-xl {
+    font-size: 2rem; /* 32px */
+  }
+}
+
+.text-responsive-2xl {
+  font-size: 1.875rem; /* 30px */
+}
+
+@media (min-width: 768px) {
+  .text-responsive-2xl {
+    font-size: 2.5rem; /* 40px */
+  }
+}
+
+/* Responsive Spacing */
+.padding-responsive {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .padding-responsive {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .padding-responsive {
+    padding: 2rem;
+  }
+}
+
+.margin-responsive {
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .margin-responsive {
+    margin: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .margin-responsive {
+    margin: 2rem;
+  }
+}
+
+/* Responsive Buttons */
+.btn-responsive {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .btn-responsive {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Hide/Show utilities */
+.hide-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hide-mobile {
+    display: block;
+  }
+}
+
+.show-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .show-mobile {
+    display: none;
+  }
+}
+
+/* Responsive Flexbox */
+.flex-responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .flex-responsive {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+/* Responsive Card */
+.card-responsive {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .card-responsive {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-responsive {
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}
+
+/* Responsive Images */
+.img-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Mobile-first overflow handling */
+.overflow-x-auto-mobile {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 768px) {
+  .overflow-x-auto-mobile {
+    overflow-x: visible;
+  }
+}
+
+/* Responsive max-width utilities */
+.max-w-responsive-sm {
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .max-w-responsive-sm {
+    max-width: 640px;
+  }
+}
+
+.max-w-responsive-md {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .max-w-responsive-md {
+    max-width: 768px;
+  }
+}
+
+.max-w-responsive-lg {
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .max-w-responsive-lg {
+    max-width: 1024px;
+  }
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Touch-friendly tap targets (minimum 44x44px) */
+button, a, input[type="button"], input[type="submit"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Responsive form inputs */
+input, textarea, select {
+  font-size: 16px; /* Prevents zoom on iOS */
+}
+
+@media (min-width: 768px) {
+  input, textarea, select {
+    font-size: 14px;
+  }
+}
