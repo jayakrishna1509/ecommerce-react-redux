@@ -30,7 +30,7 @@ This project is a modern e-commerce web application built using React for the fr
 
 ## Future Enhancements
 
-- **Wishlist:**: Allow users to add products to a wishlist.
-- **Reviews and Ratings:**: Simulate user reviews and ratings for products.
-- **Notifications:**: : Implement mock notifications for order updates
-- **Responsive Design:**: Ensure the application is fully responsive on all devices
+- **Wishlist:** Allow users to add products to a wishlist.
+- **Reviews and Ratings:** Simulate user reviews and ratings for products.
+- **Notifications:** Implement mock notifications for order updates.
+- **Responsive Design:** Ensure the application is fully responsive on all devices.
